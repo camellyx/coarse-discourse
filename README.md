@@ -1,3 +1,22 @@
+## How to download dataset instructions
+
+1. Clone this repository to a folder: e.g., coarse-discourse.
+2. Go to [*reddit apps page*](https://www.reddit.com/prefs/apps) and register a new app. Record the id under the app's name as <client_id>, record the secret key after "secret" as <client_secret>.
+3. Open a new terminal and go to coarse-discourse.
+```shell
+export CLIENT_ID=<client_id>
+export CLIENT_SECRET=<client_secret>
+export UA=user-less
+```
+4. Run the script under coarse-discourse.
+```shell
+python join_forum_data/join_forum_data.py
+```
+You may need to install praw using pip.
+```shell
+sudo pip install praw
+```
+
 ## Coarse Discourse
 
 A large corpus of discourse annotations and relations on ~10K forum threads.
